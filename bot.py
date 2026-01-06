@@ -1054,9 +1054,7 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 pass
 
 if __name__ == '__main__':
-    if not TOKEN:
-        print("❌ Ошибка: Добавьте BOT_TOKEN в файл .env!")
-        exit(1)
+    
     
     print("🚀 Запуск ПРОФЕССИОНАЛЬНОГО Натального Гида 2026...")
     print("✨ Теперь с СЕЛЕНОЙ и ЛИЛИТ!")
