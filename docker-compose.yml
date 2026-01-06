@@ -1,0 +1,17 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  astro-bot:
+    build: .
+    container_name: astro-bot
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    volumes:
+      # Монтируем директории для сохранения данных
+      - ./data:/app/data:rw
+      - ./logs:/app/logs:rw
+    # Нет необходимости в портах для polling бота
+    # ports:
+    #   - "8080:8080"

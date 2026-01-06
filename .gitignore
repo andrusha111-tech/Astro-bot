@@ -1,0 +1,48 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.temp
+*.pid
+*.pid.lock
+
+# Данные бота
+bot.log
+*.svg
+*.jpg
+*.png
+
+# Конфиденциальные данные
+.env
+.env.local
+secrets/
+keys/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Шаблоны
+*.template
